@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="js/v3.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+  <title>Platonic Trade | Withdraw Your funds</title>
+  <link rel="icon" href="images/YhURDY5TFm8Q4VU9skPslCM5vSvlc3P0BCgToBpB.png" type="image/png">
+
+  <!-- Fonts and icons -->
+  <script src="js/webfont.min.js"></script>
+  <!-- Sweet Alert -->
+  <script src="js/sweetalert.min.js"></script>
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.min.css">
+  <link rel="stylesheet" href="css/atlantis.min.css">
+  <link rel="stylesheet" href="css/customs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/atlantis.min.css">
+  <link rel="stylesheet" href="css/buttons.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+  <script src="js/jquery.min.js"></script>
+  <link href="css/select2.min.css" rel="stylesheet">
+  <script src="js/select2.min.js"></script>
+
+  <!-- Bootstrap Notify -->
+  <script src="js/bootstrap-notify.min.js"></script>
+  <script src="js/sweetalert.min.js"></script>
+  <script src="js/alpine.min.js" defer></script>
+  <script src="js/chart.min.js"></script>
+
+  <!--PayPal-->
+  <script>
+    // Add your client ID and secret
+    var PAYPAL_CLIENT = 'iidjdjdj';
+    var PAYPAL_SECRET = 'jijdjkdkdk';
+
+    // Point your server to the PayPal API
+    var PAYPAL_ORDER_API = 'https://api.paypal.com/v2/checkout/orders/';
+  </script>
+  <script src="js_1"></script>
+  <!-- Livewire Styles -->
+  <style>
+    [wire\:loading],
+    [wire\:loading\.delay],
+    [wire\:loading\.inline-block],
+    [wire\:loading\.inline],
+    [wire\:loading\.block],
+    [wire\:loading\.flex],
+    [wire\:loading\.table],
+    [wire\:loading\.grid],
+    [wire\:loading\.inline-flex] {
+      display: none;
+    }
+
+    [wire\:loading\.delay\.shortest],
+    [wire\:loading\.delay\.shorter],
+    [wire\:loading\.delay\.short],
+    [wire\:loading\.delay\.long],
+    [wire\:loading\.delay\.longer],
+    [wire\:loading\.delay\.longest] {
+      display: none;
+    }
+
+    [wire\:offline] {
+      display: none;
+    }
+
+    [wire\:dirty]:not(textarea):not(input):not(select) {
+      display: none;
+    }
+
+    input:-webkit-autofill,
+    select:-webkit-autofill,
+    textarea:-webkit-autofill {
+      animation-duration: 50000s;
+      animation-name: livewireautofill;
+    }
+
+    @keyframes livewireautofill {
+      from {}
+    }
+  </style>
+</head>
+
+<body data-background-color="dark">
+  <div id="app">
+    <script>
+      {tawk to codess }	
+    </script>
+    <div>
+      <div class="wrapper">
+        <div class="main-header">
+          <!-- Logo Header -->
+          <div class="logo-header" data-background-color="dark">
+            <a href="/" class="logo" style="font-size: 27px; color:#fff;">
+              Platonic Trade
+            </a>
+            <button class="ml-auto navbar-toggler sidenav-toggler" type="button" data-toggle="collapse"
+              data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <i class="icon-menu"></i>
+              </span>
+            </button>
+            <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+            <div class="nav-toggle">
+              <button class="btn btn-toggle toggle-sidebar">
+                <i class="icon-menu"></i>
+              </button>
+            </div>
+          </div>
+          <!-- End Logo Header -->
+
+          <!-- Navbar Header -->
+          <nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+
+            <div class="container-fluid">
+              <div class="text-center d-md-block d-none">
+                <a href="https://platonictrade.com/account/dashboard/deposits"
+                  class="pricing-action btn btn-warning btn-sm">Fund your Account</a>
+                &nbsp;
+                <a href="https://platonictrade.com/account/dashboard/withdrawals"
+                  class="pricing-action btn btn-danger btn-sm">Withdraw
+                  Funds</a>
+
+              </div>
+              <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+
+                <li class="nav-item hidden-caret">
+                  <form action="javascript:void(0)" method="post" id="styleform" class="form-inline">
+
+                    <div class="form-group">
+                      <label class="style_switch">
+                        <input name="style" id="style" type="checkbox" value="true" class="modes">
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    <script>
+                      document.getElementById("style").checked = true;
+                    </script>
+                    <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                  </form>
+                </li>
+
+                <li class="nav-item dropdown hidden-caret">
+                  <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user animated fadeIn">
+                    <div class="dropdown-user-scroll scrollbar-outer">
+                      <li>
+                        <div class="user-box">
+                          <div class="u-text">
+                            <h4>Rilla Thielen</h4>
+                            <p class="text-muted">rillathielen@gmail.com</p><a
+                              href="https://platonictrade.com/account/dashboard/account-settings"
+                              class="btn btn-xs btn-secondary btn-sm">Account Settings</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://platonictrade.com/account/dashboard/deposits">Deposit</a>
+                        <a class="dropdown-item"
+                          href="https://platonictrade.com/account/dashboard/withdrawals">Withdraw</a>
+                        <a class="dropdown-item" href="https://platonictrade.com/account/dashboard/buy-plan">Buy
+                          Plan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://platonictrade.com/account/logout" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                          Logout
+                        </a>
+                        <form id="logout-form" action="https://platonictrade.com/account/logout" method="POST"
+                          style="display: none;">
+                          <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                        </form>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+        <script type="text/javascript">
+          //create investment
+          $("#styleform").on('change', function () {
+            $.ajax({
+              url: "https://platonictrade.com/account/dashboard/changetheme",
+              type: 'POST',
+              data: $("#styleform").serialize(),
+              success: function (data) {
+                location.reload(true);
+              },
+              error: function (data) {
+                console.log(data);
+              },
+
+            });
+          });
+        </script>
+        <!-- Stored in resources/views/child.blade.php -->
+
+        <!-- Sidebar -->
+
+        <div class="sidebar sidebar-style-2" data-background-color="dark">
+          <div class="sidebar-wrapper scrollbar scrollbar-inner">
+            <div class="sidebar-content">
+              <div class="user">
+                <div class="info">
+                  <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                    <span>
+                      Rilla Thielen
+
+                      <span class="caret"></span>
+                    </span>
+                  </a>
+                  <div class="clearfix"></div>
+                  <div class="collapse in" id="collapseExample">
+                    <ul class="nav">
+                      <li>
+                        <a href="https://platonictrade.com/account/dashboard/account-settings">
+                          <span class="link-collapse">Account Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="nav nav-primary">
+                <li class="nav-item ">
+                  <a href="https://platonictrade.com/account/dashboard">
+                    <i class="fas fa-home"></i>
+                    <p>Dashboard</p>
+                  </a>
+                </li>
+                <li class="nav-item d-md-none  ">
+                  <a href="https://platonictrade.com/account/dashboard/deposits">
+                    <i class="fa fa-download " aria-hidden="true"></i>
+                    <p>Fund your Account</p>
+                  </a>
+                </li>
+                <li class="nav-item d-md-none active ">
+                  <a href="https://platonictrade.com/account/dashboard/withdrawals">
+                    <i class="fa fa-arrow-alt-circle-up " aria-hidden="true"></i>
+                    <p>Withdraw Funds</p>
+                  </a>
+                </li>
+
+                <li class="nav-item ">
+                  <a href="https://platonictrade.com/account/dashboard/tradinghistory">
+                    <i class="fa fa-signal " aria-hidden="true"></i>
+                    <p>Profit Record</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://platonictrade.com/account/dashboard/accounthistory">
+                    <i class="fa fa-briefcase " aria-hidden="true"></i>
+                    <p>Transactions history</p>
+                  </a>
+                </li>
+
+
+                <li class="nav-item  ">
+                  <a data-toggle="collapse" href="#mpack">
+                    <i class="fas fa-cubes"></i>
+                    <p>Pool Trading</p>
+                    <span class="caret"></span>
+                  </a>
+                  <div class="collapse" id="mpack">
+                    <ul class="nav nav-collapse">
+                      <li>
+                        <a href="https://platonictrade.com/account/dashboard/buy-plan">
+                          <span class="sub-item">Trading Plans</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://platonictrade.com/account/dashboard/myplans">
+                          <span class="sub-item">My Plans</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://platonictrade.com/account/dashboard/referuser">
+                    <i class="fa fa-recycle " aria-hidden="true"></i>
+                    <p>Refer Users</p>
+                  </a>
+                </li>
+                <li class="nav-item ">
+                  <a href="https://platonictrade.com/account/dashboard/support">
+                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                    <p>Help/Support</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Sidebar -->
+        <div class="main-panel bg-dark">
+          <div class="content bg-dark">
+            <div class="page-inner">
+              <div class="mt-2 mb-4">
+                <h1 class="title1 text-light">Request for Withdrawal</h1>
+              </div>
+              <div>
+              </div>
+              <div>
+              </div>
+              <div class="mb-5 row">
+                <div class="col-lg-4">
+                  <div class="p-3 rounded card bg-dark">
+                    <div class="card-body border-danger">
+                      <h2 class="card-title mb-3 text-light"> USDT</h2>
+                      <h4 class="text-light">Minimum amount: <strong style="float:right;"> £1000</strong></h4><br>
+
+                      <h4 class="text-light">Maximum amount:<strong style="float:right;"> £5000</strong></h4><br>
+
+                      <h4 class="text-light">Charge Type:<strong style="float:right;">percentage</strong></h4><br>
+
+                      <h4 class="text-light">Charges Amount:
+                        <strong style="float:right;">
+                          0%
+                        </strong>
+                      </h4><br>
+
+                      <h4 class="text-light">Duration:<strong style="float:right;"> Instant payment</strong></h4><br>
+                      <div class="text-center">
+                        <form action="https://platonictrade.com/account/dashboard/enter-amount" method="POST">
+                          <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                          <div class="form-group">
+                            <input type="hidden" value="USDT" name="method">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i> Request
+                              withdrawal</button>
+                          </div>
+
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="p-3 rounded card bg-dark">
+                    <div class="card-body border-danger">
+                      <h2 class="card-title mb-3 text-light"> Ethereum</h2>
+                      <h4 class="text-light">Minimum amount: <strong style="float:right;"> £1000</strong></h4><br>
+
+                      <h4 class="text-light">Maximum amount:<strong style="float:right;"> £5000</strong></h4><br>
+
+                      <h4 class="text-light">Charge Type:<strong style="float:right;">percentage</strong></h4><br>
+
+                      <h4 class="text-light">Charges Amount:
+                        <strong style="float:right;">
+                          0%
+                        </strong>
+                      </h4><br>
+
+                      <h4 class="text-light">Duration:<strong style="float:right;"> Instant payment</strong></h4><br>
+                      <div class="text-center">
+                        <form action="https://platonictrade.com/account/dashboard/enter-amount" method="POST">
+                          <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                          <div class="form-group">
+                            <input type="hidden" value="Ethereum" name="method">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i> Request
+                              withdrawal</button>
+                          </div>
+
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="p-3 rounded card bg-dark">
+                    <div class="card-body border-danger">
+                      <h2 class="card-title mb-3 text-light"> Bitcoin</h2>
+                      <h4 class="text-light">Minimum amount: <strong style="float:right;"> £1000</strong></h4><br>
+
+                      <h4 class="text-light">Maximum amount:<strong style="float:right;"> £5000</strong></h4><br>
+
+                      <h4 class="text-light">Charge Type:<strong style="float:right;">percentage</strong></h4><br>
+
+                      <h4 class="text-light">Charges Amount:
+                        <strong style="float:right;">
+                          0%
+                        </strong>
+                      </h4><br>
+
+                      <h4 class="text-light">Duration:<strong style="float:right;"> Instant payment</strong></h4><br>
+                      <div class="text-center">
+                        <form action="https://platonictrade.com/account/dashboard/enter-amount" method="POST">
+                          <input type="hidden" name="_token" value="xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ">
+                          <div class="form-group">
+                            <input type="hidden" value="Bitcoin" name="method">
+                            <button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i> Request
+                              withdrawal</button>
+                          </div>
+
+                        </form>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Withdrawal Modal -->
+              <div id="withdrawdisabled" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                      <h4 class="modal-title text-light">Withdrawal Status</h4>
+                      <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                      <h4 class="text-light">Withdrawal is Disabled at the moment, Please check back later</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /Withdrawals Modal -->
+            </div>
+          </div>
+          <footer class="footer bg-dark text-light">
+            <div class="container-fluid">
+              <div class="text-center row copyright text-align-center">
+                <p>All Rights Reserved &copy; Platonic Trade 2022</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Livewire Scripts -->
+
+    <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+    <script data-turbo-eval="false" data-turbolinks-eval="false">
+      if (window.livewire) {
+        console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+      }
+
+      window.livewire = new Livewire();
+      window.livewire.devTools(true);
+      window.Livewire = window.livewire;
+      window.livewire_app_url = '';
+      window.livewire_token = 'xwv56C5ew6IkrjDqp3MZo3qTYPp5pcWCKWOk2sLZ';
+
+      /* Make sure Livewire loads first. */
+      if (window.Alpine) {
+        /* Defer showing the warning so it doesn't get buried under downstream errors. */
+        document.addEventListener("DOMContentLoaded", function () {
+          setTimeout(function () {
+            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+          })
+        });
+      }
+
+      /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+      window.deferLoadingAlpine = function (callback) {
+        window.addEventListener('livewire:load', function () {
+          callback();
+        });
+      };
+
+      let started = false;
+
+      window.addEventListener('alpine:initializing', function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!started) {
+          window.livewire.start();
+
+          started = true;
+        }
+      });
+    </script>
+    <!--   Core JS Files   -->
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <!-- jQuery Scrollbar -->
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <!-- jQuery Sparkline -->
+    <script src="js/jquery.sparkline.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="js/sweetalert.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="js/bootstrap-notify.min.js"></script>
+
+    <script type="text/javascript" src="js/datatables.min.js">
+    </script>
+
+    <script src="js/atlantis.min.js"></script>
+    <script src="js/atlantis.js"></script>
+    <script type="text/javascript" src="js/element.js">
+    </script>
+    <script src="js/customs.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".dataTables_length select").addClass("bg-dark text-light");
+        $(".dataTables_filter input").addClass("bg-dark text-light");
+        $(".dataTables_length select").addClass("bg-dark text-light");
+        $(".dataTables_filter input").addClass("bg-dark text-light");
+      });
+    </script>
+
+  </div>
+</body>
+
+</html>

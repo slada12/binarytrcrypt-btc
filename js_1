@@ -1,0 +1,7 @@
+throw new Error("SDK Validation error: 'client-id not recognized for either production or sandbox: iidjdjdj'" );
+
+/* Original Error:
+
+client-id not recognized for either production or sandbox: iidjdjdj (debug id: f7186024e526a)
+
+*/
