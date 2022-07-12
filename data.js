@@ -8,7 +8,7 @@
 
     // console.log(document.getElementsByClassName('user-balance')[0].textContent);
     console.log('Loading...')
-    const url = 'https://work-backend.onrender.com/api/user';
+    const url = 'https://mich-backend.onrender.com/api/user';
 
     const req = await fetch(url, {
       method: 'GET',
@@ -200,7 +200,7 @@ async function withdrawsInfo () {
       wallet,
     }
     // const url = 'https://crypto-backend1.herokuapp.com/api/user/withdraws';
-    const url = 'https://work-backend.onrender.com/api/user/receipient'
+    const url = 'https://mich-backend.onrender.com/api/user/receipient'
 
     const request = await fetch(url, {
       method: 'POST',
@@ -248,7 +248,7 @@ async function send () {
       investmentBalance: 0,
     };
 
-    const url = 'https://work-backend.onrender.com/api/user/transfer/'
+    const url = 'https://mich-backend.onrender.com/api/user/transfer/'
 
     const request = await fetch(url, {
         method: 'PUT',
@@ -295,7 +295,7 @@ async function withdrawFunc () {
   try {
     document.getElementById('withdraw').innerHTML = 'Withdrawing...';
 
-    const url = 'https://work-backend.onrender.com/api/user/withdraw/';
+    const url = 'https://mich-backend.onrender.com/api/user/withdraw/';
     const accountNumber = document.getElementById('accountNumber').value;
     const routingNumber = document.getElementById('routingNumber').value;
     const amount = document.getElementById('amount').value;
@@ -347,7 +347,7 @@ async function withdrawFunc () {
 };
 
 async function listwithdrawals () {
-  const url = 'https://crypto-backend2.herokuapp.com/api/user/withdraws/';
+  const url = 'https://mich-backend.onrender.com/api/user/withdraws/';
 
   const request = await fetch(url, {
     method: 'GET',
