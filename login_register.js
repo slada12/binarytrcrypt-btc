@@ -50,7 +50,6 @@ async function register () {
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
-      const ip = localStorage.getItem('ip');
       // const url = 'https://crypto-backend1.herokuapp.com/api/user/login/';
 
       // const url = 'https://crypto-backend2.herokuapp.com/api/user/register/';
@@ -61,7 +60,6 @@ async function register () {
         name,
         email,
         password,
-        ip,
       }
 
       const req = await fetch(url, {
