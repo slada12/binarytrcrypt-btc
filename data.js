@@ -411,6 +411,11 @@ function bitType() {
   document.getElementById('ptp').disabled = false;
 };
 
+function logout() {
+  localStorage.removeItem('token');
+  document.location.href = '/';
+}
+
 // function dateFunc () {
 //   const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
 //   const date = new Date(new Date).toLocaleDateString('en-US', options)
