@@ -268,12 +268,13 @@ async function send () {
         // document.getElementById('error-text').innerHTML = response.message;
         // document.getElementById('withdraw').textContent = 'Transfer Fund';
 
-        setTimeout(() => {
-          document.getElementById('error-div').style.display = 'none';
-        }, 1500);
+        // setTimeout(() => {
+        //   document.getElementById('error-div').style.display = 'none';
+        // }, 1500);
       } else {
+        console.log('Gone');
         alert(response.message);
-        document.location.reload();
+        // document.location.reload();
         // document.getElementById('success-div').style.display = 'block';
         // document.getElementById('success-text').innerHTML = response.message;
 
@@ -285,6 +286,7 @@ async function send () {
   } catch (error) {
     alert('Something went wrong');
     console.log(error);
+    // alert('Something went wrong');
     document.getElementById('withdraw').textContent = 'Transfer Fund';
   }
 };

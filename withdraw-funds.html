@@ -356,7 +356,7 @@
                           <small class="text-light">OTP will be sent to your email when you request</small>
                         </div> -->
                         <div class="form-group">
-                          <button class="btn btn-primary" type="submit" id="withdraw" onclick="send_withdraw();">Complete Request</button>
+                          <button class="btn btn-primary" type="submit" id="withdraw" onclick="event.preventDefault(); send_withdraw();">Complete Request</button>
                         </div>
                       </form>
                     </div>
