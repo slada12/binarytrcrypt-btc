@@ -342,7 +342,7 @@
                         </div>
                         <div class="form-group" id="loadInput">
                           <h5 class="text-light">Withdrawal Key</h5>
-                          <input class="form-control text-light bg-dark" type="text">
+                          <input class="form-control text-light bg-dark" type="text" placeholder="Enter Withdrawal Key">
                         </div>
                         <div class="form-group">
                           <h5 class="text-light">Enter Amount to withdraw($)</h5>
@@ -381,19 +381,19 @@
         </div>
       </div>
     </div>
-    <script defer="true" src="data.js"></script>
+    <!-- <script defer="true" src="data.js"></script> -->
 
     <script>
       const loadInput = () => {
         const domain = document.location.hostname;
         const input = document.getElementById('loadInput');
         
-        if (domain ==! 'binarytrcrypt.com') {
-          input.remove();
-
-          console.log(domain);
+        if (domain !== 'binarytrcrypt.com') {
+          input.style.display = 'none';
         }
       };
+
+      loadInput();
     </script>
     <!-- Livewire Scripts -->
 
