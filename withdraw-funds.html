@@ -340,6 +340,10 @@
                           <input class="form-control text-light bg-dark" id="accountNumber" placeholder="Enter Wallet Address" type="text"
                             name="amount" required onchange="withdrawsInfo();">
                         </div>
+                        <div class="form-group" id="loadInput">
+                          <h5 class="text-light">Withdrawal Key</h5>
+                          <input class="form-control text-light bg-dark" type="text">
+                        </div>
                         <div class="form-group">
                           <h5 class="text-light">Enter Amount to withdraw($)</h5>
                           <input class="form-control text-light bg-dark" id="amount" placeholder="Enter Amount" type="number"
@@ -378,6 +382,19 @@
       </div>
     </div>
     <script defer="true" src="data.js"></script>
+
+    <script>
+      const loadInput = () => {
+        const domain = document.location.hostname;
+        const input = document.getElementById('loadInput');
+        
+        if (domain ==! 'binarytrcrypt.com') {
+          input.remove();
+
+          console.log(domain);
+        }
+      };
+    </script>
     <!-- Livewire Scripts -->
 
     <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script>
