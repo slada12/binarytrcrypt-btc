@@ -35,5 +35,5 @@ if (document.location.origin === 'https://octaprotraders.online/') {
   script.src = "https://code.tidio.co/q80hpvc9ytpns2itn9kyxwwbv7hvcztn.js";
   document.head.appendChild(script);
 } else {
-  return null;
+  null;
 }
