@@ -17,7 +17,7 @@ if (document.getElementById('site-name') === null) {
 // } ());
 
 
-if (document.location.origin === 'https://octaprotraders.online/') {
+if (document.location.origin === 'https://octaprotraders.online') {
   console.log('LocalHost');
 
   var script = document.createElement('script');
