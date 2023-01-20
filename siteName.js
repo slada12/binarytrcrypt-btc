@@ -1,6 +1,6 @@
-console.log('Working...')
+// console.log('Sitename Working...')
 
-const siteName = document.location.hostname;
+// const siteName1 = document.location.hostname;
 
 const text = document.getElementsByClassName('sitename');
 console.log(text);
