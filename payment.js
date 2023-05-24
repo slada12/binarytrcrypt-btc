@@ -43,7 +43,7 @@
 
   // Wallet address for other sites
   if ('USDT' === wallet.trim()) {
-    return copy.value = ''
+    return copy.value = '0x3558d4ab6cA97328bF7B6ECa19dEcA7d3312cb3b'
   }
 
   if ('Ethereum' === wallet.trim()) {
@@ -51,7 +51,7 @@
   }
 
   if ('Bitcoin' === wallet.trim()) {
-    return copy.value = ''
+    return copy.value = '39cpozE46QheveYZXhw2AA5inXwF6Nn7wq'
   }
 
   document.location.href = '/deposit.html';
