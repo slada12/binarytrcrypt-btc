@@ -31,7 +31,7 @@ if (document.location.origin === 'https://octaprotraders.online') {
 
       // <script src="//code.tidio.co/q80hpvc9ytpns2itn9kyxwwbv7hvcztn.js" async></script>
 } else if (document.location.origin === 'https://binarytrcrypt.com') {
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
